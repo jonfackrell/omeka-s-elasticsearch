@@ -9,6 +9,11 @@ use Zend\View\Renderer\PhpRenderer;
 class Module extends AbstractModule
 {
 
+    public function getConfig()
+    {
+        return include __DIR__ . '/config/module.config.php';
+    }
+
     /**
      * Get this module's configuration form.
      *
